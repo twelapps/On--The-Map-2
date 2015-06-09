@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A81974B11B20F78B00FF7433 /* UdacityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81974B01B20F78B00FF7433 /* UdacityMapView.swift */; };
+		A820468A1B1AF36100CAD57C /* UdacityStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82046891B1AF36100CAD57C /* UdacityStudentInfo.swift */; };
+		A82C944B1B1C8E3F002FC348 /* InfoPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C944A1B1C8E3F002FC348 /* InfoPostingViewController.swift */; };
+		A82C944D1B1CA79B002FC348 /* MeOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C944C1B1CA79B002FC348 /* MeOnMapViewController.swift */; };
+		A86514551B1391E50002C50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86514541B1391E50002C50D /* AppDelegate.swift */; };
+		A86514571B1391E50002C50D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86514561B1391E50002C50D /* LoginViewController.swift */; };
+		A865145A1B1391E50002C50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86514581B1391E50002C50D /* Main.storyboard */; };
+		A865145C1B1391E50002C50D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A865145B1B1391E50002C50D /* Images.xcassets */; };
+		A865145F1B1391E50002C50D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A865145D1B1391E50002C50D /* LaunchScreen.xib */; };
+		A865146B1B1391E50002C50D /* On_The_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865146A1B1391E50002C50D /* On_The_MapTests.swift */; };
+		A86514751B1392E60002C50D /* photo.jpg.png in Resources */ = {isa = PBXBuildFile; fileRef = A86514741B1392E60002C50D /* photo.jpg.png */; };
+		A86FEBB11B1B7A1C0053B0EC /* UdacityStudentMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FEBB01B1B7A1C0053B0EC /* UdacityStudentMapViewController.swift */; };
+		A888D4221B19F78500C3DB3E /* UdacityUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888D4211B19F78500C3DB3E /* UdacityUserInfo.swift */; };
+		A888D4261B1A139B00C3DB3E /* UdacityStudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888D4251B1A139B00C3DB3E /* UdacityStudentTableViewController.swift */; };
+		A888D4391B1A296900C3DB3E /* map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4281B1A296900C3DB3E /* map.pdf */; };
+		A888D43A1B1A296900C3DB3E /* OnTheMap_29.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D4291B1A296900C3DB3E /* OnTheMap_29.png */; };
+		A888D43B1B1A296900C3DB3E /* OnTheMap_40.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D42A1B1A296900C3DB3E /* OnTheMap_40.png */; };
+		A888D43C1B1A296900C3DB3E /* OnTheMap_58.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D42B1B1A296900C3DB3E /* OnTheMap_58.png */; };
+		A888D43D1B1A296900C3DB3E /* OnTheMap_76.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D42C1B1A296900C3DB3E /* OnTheMap_76.png */; };
+		A888D43E1B1A296900C3DB3E /* OnTheMap_80.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D42D1B1A296900C3DB3E /* OnTheMap_80.png */; };
+		A888D43F1B1A296900C3DB3E /* OnTheMap_120.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D42E1B1A296900C3DB3E /* OnTheMap_120.png */; };
+		A888D4401B1A296900C3DB3E /* OnTheMap_152.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D42F1B1A296900C3DB3E /* OnTheMap_152.png */; };
+		A888D4411B1A296900C3DB3E /* OnTheMap_180.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D4301B1A296900C3DB3E /* OnTheMap_180.png */; };
+		A888D4421B1A296900C3DB3E /* OnTheMap_512.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D4311B1A296900C3DB3E /* OnTheMap_512.png */; };
+		A888D4431B1A296900C3DB3E /* OnTheMap_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A888D4321B1A296900C3DB3E /* OnTheMap_1024.png */; };
+		A888D4441B1A296900C3DB3E /* pin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4331B1A296900C3DB3E /* pin.pdf */; };
+		A888D4451B1A296900C3DB3E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4341B1A296900C3DB3E /* Roboto-Medium.ttf */; };
+		A888D4461B1A296900C3DB3E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4351B1A296900C3DB3E /* Roboto-Regular.ttf */; };
+		A888D4471B1A296900C3DB3E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4361B1A296900C3DB3E /* Roboto-Thin.ttf */; };
+		A888D4481B1A296900C3DB3E /* udacity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4371B1A296900C3DB3E /* udacity.pdf */; };
+		A888D4641B1A346500C3DB3E /* list.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A888D4631B1A346500C3DB3E /* list.pdf */; };
+		A896DE7A1B1658BD00BB653A /* UdacityDBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896DE791B1658BD00BB653A /* UdacityDBConstants.swift */; };
+		A896DE7C1B1658F600BB653A /* UdacityDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896DE7B1B1658F600BB653A /* UdacityDBClient.swift */; };
+		A8B356811B1B11CF0013DA15 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B356801B1B11CF0013DA15 /* StudentTableViewCell.swift */; };
+		A8D727431B26BFF3004272D6 /* UdacityMapStringCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D727421B26BFF3004272D6 /* UdacityMapStringCoords.swift */; };
+		A8DB78EF1B2468E500B5E094 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DB78EE1B2468E500B5E094 /* pin.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A86514651B1391E50002C50D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A86514471B1391E50002C50D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A865144E1B1391E50002C50D;
+			remoteInfo = "On The Map";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A81974B01B20F78B00FF7433 /* UdacityMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityMapView.swift; sourceTree = "<group>"; };
+		A82046891B1AF36100CAD57C /* UdacityStudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityStudentInfo.swift; sourceTree = "<group>"; };
+		A82C944A1B1C8E3F002FC348 /* InfoPostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPostingViewController.swift; sourceTree = "<group>"; };
+		A82C944C1B1CA79B002FC348 /* MeOnMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeOnMapViewController.swift; sourceTree = "<group>"; };
+		A865144F1B1391E50002C50D /* On The Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On The Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86514531B1391E50002C50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86514541B1391E50002C50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A86514561B1391E50002C50D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A86514591B1391E50002C50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A865145B1B1391E50002C50D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A865145E1B1391E50002C50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A86514641B1391E50002C50D /* On The MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On The MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86514691B1391E50002C50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A865146A1B1391E50002C50D /* On_The_MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = On_The_MapTests.swift; sourceTree = "<group>"; };
+		A86514741B1392E60002C50D /* photo.jpg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.jpg.png; sourceTree = "<group>"; };
+		A86FEBB01B1B7A1C0053B0EC /* UdacityStudentMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityStudentMapViewController.swift; sourceTree = "<group>"; };
+		A888D4211B19F78500C3DB3E /* UdacityUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityUserInfo.swift; sourceTree = "<group>"; };
+		A888D4251B1A139B00C3DB3E /* UdacityStudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityStudentTableViewController.swift; sourceTree = "<group>"; };
+		A888D4281B1A296900C3DB3E /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = map.pdf; sourceTree = "<group>"; };
+		A888D4291B1A296900C3DB3E /* OnTheMap_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_29.png; sourceTree = "<group>"; };
+		A888D42A1B1A296900C3DB3E /* OnTheMap_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_40.png; sourceTree = "<group>"; };
+		A888D42B1B1A296900C3DB3E /* OnTheMap_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_58.png; sourceTree = "<group>"; };
+		A888D42C1B1A296900C3DB3E /* OnTheMap_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_76.png; sourceTree = "<group>"; };
+		A888D42D1B1A296900C3DB3E /* OnTheMap_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_80.png; sourceTree = "<group>"; };
+		A888D42E1B1A296900C3DB3E /* OnTheMap_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_120.png; sourceTree = "<group>"; };
+		A888D42F1B1A296900C3DB3E /* OnTheMap_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_152.png; sourceTree = "<group>"; };
+		A888D4301B1A296900C3DB3E /* OnTheMap_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_180.png; sourceTree = "<group>"; };
+		A888D4311B1A296900C3DB3E /* OnTheMap_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_512.png; sourceTree = "<group>"; };
+		A888D4321B1A296900C3DB3E /* OnTheMap_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMap_1024.png; sourceTree = "<group>"; };
+		A888D4331B1A296900C3DB3E /* pin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pin.pdf; sourceTree = "<group>"; };
+		A888D4341B1A296900C3DB3E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A888D4351B1A296900C3DB3E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A888D4361B1A296900C3DB3E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A888D4371B1A296900C3DB3E /* udacity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = udacity.pdf; sourceTree = "<group>"; };
+		A888D4631B1A346500C3DB3E /* list.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = list.pdf; sourceTree = "<group>"; };
+		A896DE791B1658BD00BB653A /* UdacityDBConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityDBConstants.swift; sourceTree = "<group>"; };
+		A896DE7B1B1658F600BB653A /* UdacityDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityDBClient.swift; sourceTree = "<group>"; };
+		A8B356801B1B11CF0013DA15 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		A8D727421B26BFF3004272D6 /* UdacityMapStringCoords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityMapStringCoords.swift; sourceTree = "<group>"; };
+		A8DB78EE1B2468E500B5E094 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A865144C1B1391E50002C50D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86514611B1391E50002C50D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A86514461B1391E40002C50D = {
+			isa = PBXGroup;
+			children = (
+				A86514511B1391E50002C50D /* On The Map */,
+				A86514671B1391E50002C50D /* On The MapTests */,
+				A86514501B1391E50002C50D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A86514501B1391E50002C50D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A865144F1B1391E50002C50D /* On The Map.app */,
+				A86514641B1391E50002C50D /* On The MapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A86514511B1391E50002C50D /* On The Map */ = {
+			isa = PBXGroup;
+			children = (
+				A86514541B1391E50002C50D /* AppDelegate.swift */,
+				A896DE761B16583800BB653A /* Model */,
+				A8B3567F1B1B11A00013DA15 /* View */,
+				A86514761B13A92A0002C50D /* Controller */,
+				A86514521B1391E50002C50D /* Supporting Files */,
+			);
+			path = "On The Map";
+			sourceTree = "<group>";
+		};
+		A86514521B1391E50002C50D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A86514771B13A9870002C50D /* Storyboards */,
+				A86514781B13A9AC0002C50D /* Images */,
+				A865145B1B1391E50002C50D /* Images.xcassets */,
+				A86514531B1391E50002C50D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A86514671B1391E50002C50D /* On The MapTests */ = {
+			isa = PBXGroup;
+			children = (
+				A865146A1B1391E50002C50D /* On_The_MapTests.swift */,
+				A86514681B1391E50002C50D /* Supporting Files */,
+			);
+			path = "On The MapTests";
+			sourceTree = "<group>";
+		};
+		A86514681B1391E50002C50D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A86514691B1391E50002C50D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A86514761B13A92A0002C50D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A86514561B1391E50002C50D /* LoginViewController.swift */,
+				A888D4251B1A139B00C3DB3E /* UdacityStudentTableViewController.swift */,
+				A86FEBB01B1B7A1C0053B0EC /* UdacityStudentMapViewController.swift */,
+				A82C944A1B1C8E3F002FC348 /* InfoPostingViewController.swift */,
+				A82C944C1B1CA79B002FC348 /* MeOnMapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A86514771B13A9870002C50D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A865145D1B1391E50002C50D /* LaunchScreen.xib */,
+				A86514581B1391E50002C50D /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A86514781B13A9AC0002C50D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A86514741B1392E60002C50D /* photo.jpg.png */,
+				A888D4631B1A346500C3DB3E /* list.pdf */,
+				A888D4281B1A296900C3DB3E /* map.pdf */,
+				A888D4331B1A296900C3DB3E /* pin.pdf */,
+				A8DB78EE1B2468E500B5E094 /* pin.png */,
+				A888D4291B1A296900C3DB3E /* OnTheMap_29.png */,
+				A888D42A1B1A296900C3DB3E /* OnTheMap_40.png */,
+				A888D42B1B1A296900C3DB3E /* OnTheMap_58.png */,
+				A888D42C1B1A296900C3DB3E /* OnTheMap_76.png */,
+				A888D42D1B1A296900C3DB3E /* OnTheMap_80.png */,
+				A888D42E1B1A296900C3DB3E /* OnTheMap_120.png */,
+				A888D42F1B1A296900C3DB3E /* OnTheMap_152.png */,
+				A888D4301B1A296900C3DB3E /* OnTheMap_180.png */,
+				A888D4311B1A296900C3DB3E /* OnTheMap_512.png */,
+				A888D4321B1A296900C3DB3E /* OnTheMap_1024.png */,
+				A888D4341B1A296900C3DB3E /* Roboto-Medium.ttf */,
+				A888D4351B1A296900C3DB3E /* Roboto-Regular.ttf */,
+				A888D4361B1A296900C3DB3E /* Roboto-Thin.ttf */,
+				A888D4371B1A296900C3DB3E /* udacity.pdf */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A896DE761B16583800BB653A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A896DE771B16584400BB653A /* Clients */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A896DE771B16584400BB653A /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				A896DE781B16585500BB653A /* UdacityDB */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		A896DE781B16585500BB653A /* UdacityDB */ = {
+			isa = PBXGroup;
+			children = (
+				A896DE791B1658BD00BB653A /* UdacityDBConstants.swift */,
+				A888D4211B19F78500C3DB3E /* UdacityUserInfo.swift */,
+				A896DE7B1B1658F600BB653A /* UdacityDBClient.swift */,
+				A82046891B1AF36100CAD57C /* UdacityStudentInfo.swift */,
+				A8D727421B26BFF3004272D6 /* UdacityMapStringCoords.swift */,
+			);
+			name = UdacityDB;
+			sourceTree = "<group>";
+		};
+		A8B3567F1B1B11A00013DA15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8B356801B1B11CF0013DA15 /* StudentTableViewCell.swift */,
+				A81974B01B20F78B00FF7433 /* UdacityMapView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A865144E1B1391E50002C50D /* On The Map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A865146E1B1391E50002C50D /* Build configuration list for PBXNativeTarget "On The Map" */;
+			buildPhases = (
+				A865144B1B1391E50002C50D /* Sources */,
+				A865144C1B1391E50002C50D /* Frameworks */,
+				A865144D1B1391E50002C50D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "On The Map";
+			productName = "On The Map";
+			productReference = A865144F1B1391E50002C50D /* On The Map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A86514631B1391E50002C50D /* On The MapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86514711B1391E50002C50D /* Build configuration list for PBXNativeTarget "On The MapTests" */;
+			buildPhases = (
+				A86514601B1391E50002C50D /* Sources */,
+				A86514611B1391E50002C50D /* Frameworks */,
+				A86514621B1391E50002C50D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A86514661B1391E50002C50D /* PBXTargetDependency */,
+			);
+			name = "On The MapTests";
+			productName = "On The MapTests";
+			productReference = A86514641B1391E50002C50D /* On The MapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A86514471B1391E50002C50D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Twelker;
+				TargetAttributes = {
+					A865144E1B1391E50002C50D = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A86514631B1391E50002C50D = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A865144E1B1391E50002C50D;
+					};
+				};
+			};
+			buildConfigurationList = A865144A1B1391E50002C50D /* Build configuration list for PBXProject "On The Map" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A86514461B1391E40002C50D;
+			productRefGroup = A86514501B1391E50002C50D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A865144E1B1391E50002C50D /* On The Map */,
+				A86514631B1391E50002C50D /* On The MapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A865144D1B1391E50002C50D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A888D4441B1A296900C3DB3E /* pin.pdf in Resources */,
+				A865145A1B1391E50002C50D /* Main.storyboard in Resources */,
+				A888D43F1B1A296900C3DB3E /* OnTheMap_120.png in Resources */,
+				A888D43B1B1A296900C3DB3E /* OnTheMap_40.png in Resources */,
+				A86514751B1392E60002C50D /* photo.jpg.png in Resources */,
+				A888D43A1B1A296900C3DB3E /* OnTheMap_29.png in Resources */,
+				A888D43E1B1A296900C3DB3E /* OnTheMap_80.png in Resources */,
+				A8DB78EF1B2468E500B5E094 /* pin.png in Resources */,
+				A888D4431B1A296900C3DB3E /* OnTheMap_1024.png in Resources */,
+				A888D4471B1A296900C3DB3E /* Roboto-Thin.ttf in Resources */,
+				A888D4451B1A296900C3DB3E /* Roboto-Medium.ttf in Resources */,
+				A888D4401B1A296900C3DB3E /* OnTheMap_152.png in Resources */,
+				A888D4641B1A346500C3DB3E /* list.pdf in Resources */,
+				A888D4411B1A296900C3DB3E /* OnTheMap_180.png in Resources */,
+				A888D4481B1A296900C3DB3E /* udacity.pdf in Resources */,
+				A888D43C1B1A296900C3DB3E /* OnTheMap_58.png in Resources */,
+				A865145F1B1391E50002C50D /* LaunchScreen.xib in Resources */,
+				A888D4421B1A296900C3DB3E /* OnTheMap_512.png in Resources */,
+				A888D4391B1A296900C3DB3E /* map.pdf in Resources */,
+				A888D4461B1A296900C3DB3E /* Roboto-Regular.ttf in Resources */,
+				A865145C1B1391E50002C50D /* Images.xcassets in Resources */,
+				A888D43D1B1A296900C3DB3E /* OnTheMap_76.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86514621B1391E50002C50D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A865144B1B1391E50002C50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A888D4221B19F78500C3DB3E /* UdacityUserInfo.swift in Sources */,
+				A820468A1B1AF36100CAD57C /* UdacityStudentInfo.swift in Sources */,
+				A82C944D1B1CA79B002FC348 /* MeOnMapViewController.swift in Sources */,
+				A896DE7C1B1658F600BB653A /* UdacityDBClient.swift in Sources */,
+				A82C944B1B1C8E3F002FC348 /* InfoPostingViewController.swift in Sources */,
+				A8D727431B26BFF3004272D6 /* UdacityMapStringCoords.swift in Sources */,
+				A86514571B1391E50002C50D /* LoginViewController.swift in Sources */,
+				A86514551B1391E50002C50D /* AppDelegate.swift in Sources */,
+				A81974B11B20F78B00FF7433 /* UdacityMapView.swift in Sources */,
+				A8B356811B1B11CF0013DA15 /* StudentTableViewCell.swift in Sources */,
+				A86FEBB11B1B7A1C0053B0EC /* UdacityStudentMapViewController.swift in Sources */,
+				A888D4261B1A139B00C3DB3E /* UdacityStudentTableViewController.swift in Sources */,
+				A896DE7A1B1658BD00BB653A /* UdacityDBConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86514601B1391E50002C50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A865146B1B1391E50002C50D /* On_The_MapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A86514661B1391E50002C50D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A865144E1B1391E50002C50D /* On The Map */;
+			targetProxy = A86514651B1391E50002C50D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A86514581B1391E50002C50D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A86514591B1391E50002C50D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A865145D1B1391E50002C50D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A865145E1B1391E50002C50D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A865146C1B1391E50002C50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A865146D1B1391E50002C50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A865146F1B1391E50002C50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "On The Map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A86514701B1391E50002C50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "On The Map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A86514721B1391E50002C50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "On The MapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/On The Map.app/On The Map";
+			};
+			name = Debug;
+		};
+		A86514731B1391E50002C50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "On The MapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/On The Map.app/On The Map";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A865144A1B1391E50002C50D /* Build configuration list for PBXProject "On The Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A865146C1B1391E50002C50D /* Debug */,
+				A865146D1B1391E50002C50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A865146E1B1391E50002C50D /* Build configuration list for PBXNativeTarget "On The Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A865146F1B1391E50002C50D /* Debug */,
+				A86514701B1391E50002C50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A86514711B1391E50002C50D /* Build configuration list for PBXNativeTarget "On The MapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86514721B1391E50002C50D /* Debug */,
+				A86514731B1391E50002C50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A86514471B1391E50002C50D /* Project object */;
+}
