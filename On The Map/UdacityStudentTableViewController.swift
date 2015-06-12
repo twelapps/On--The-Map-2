@@ -53,7 +53,15 @@ class UdacityStudentTableViewController: UIViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         // Open student provided URL
-        let url = studentInfoKeptHere.allUdacityStudentInfo[indexPath.row].mediaURL
+        
+        var url = studentInfoKeptHere.allUdacityStudentInfo[indexPath.row].mediaURL
+        
+        // If it is url without http:// extend the url with this
+        let first4chars = url.substringToIndex(advance(url.startIndex, 4))
+        if first4chars != UdacityDBClient.Constants.http {
+            url = UdacityDBClient.Constants.urlHeader + url
+        }
+        
         if UdacityDBClient().verifyUrl(url) {
             UIApplication.sharedApplication().openURL(NSURL(string: url)!)
         }

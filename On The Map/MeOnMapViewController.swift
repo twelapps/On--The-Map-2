@@ -64,16 +64,16 @@ class MeOnMapViewController: UIViewController, UITextFieldDelegate {
         } else {
             url_data = studentInfoKeptHere.myUserInfo.mediaURL
         }
-            // Fill callout on the map
+        // Fill callout on the map
         
-            if studentInfoKeptHere.myUserInfo.latitude != UdacityDBClient.Constants.zeroDouble {
-                placeAnnotationOnMap(studentInfoKeptHere.myMapStringCoords.latitude,
-                          longitude: studentInfoKeptHere.myMapStringCoords.longitude,
-                              title: UdacityDBClient.Constants.calloutTitle,
-                           subtitle: url_data)
-            } else {
-                // Bad luck, my info not found, let it empty on the map
-            }
+        if studentInfoKeptHere.myUserInfo.latitude != UdacityDBClient.Constants.zeroDouble {
+            placeAnnotationOnMap(studentInfoKeptHere.myMapStringCoords.latitude,
+                      longitude: studentInfoKeptHere.myMapStringCoords.longitude,
+                          title: UdacityDBClient.Constants.calloutTitle,
+                       subtitle: url_data)
+        } else {
+        // Bad luck, my info not found, let it empty on the map
+        }
     }
     
     func placeAnnotationOnMap(latitude: CLLocationDegrees, longitude: CLLocationDegrees, title: String, subtitle: String)  {
@@ -101,7 +101,14 @@ class MeOnMapViewController: UIViewController, UITextFieldDelegate {
         
         // SAVE STUFF BOTH TO DISK AND TO UDACITY
     
-        if UdacityDBClient().verifyUrl(self.myUrl.text) {
+        // If it is url without http:// extend the url with this
+        var url = self.myUrl.text
+        let first4chars = url!.substringToIndex(advance(url!.startIndex, 4))
+        if first4chars != UdacityDBClient.Constants.http {
+            url = UdacityDBClient.Constants.urlHeader + url!
+        }
+        
+        if UdacityDBClient().verifyUrl(url) {
             UdacityDBClient().saveMyMediaURL(self.myUrl.text)
             
             let updateUdacity = UdacityDBClient()

@@ -368,7 +368,7 @@
                                         <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <items>
                                             <navigationItem id="Fqr-6f-jpY">
-                                                <barButtonItem key="leftBarButtonItem" title="Back" id="r9O-Ql-hXD">
+                                                <barButtonItem key="leftBarButtonItem" title="Cancel" id="r9O-Ql-hXD">
                                                     <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="backButtonItemClicked:" destination="6l4-HH-KhG" id="Q4r-8y-4tQ"/>
@@ -416,6 +416,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0mO-ww-Ct1">
+                                        <rect key="frame" x="282" y="393" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -427,11 +431,13 @@
                                     <constraint firstAttribute="centerX" secondItem="uzi-Nh-A4W" secondAttribute="centerX" id="LCg-UE-gLA"/>
                                     <constraint firstAttribute="trailing" secondItem="rnN-US-tpF" secondAttribute="trailing" id="Lxl-vh-Nwe"/>
                                     <constraint firstItem="xyN-pu-kR3" firstAttribute="top" secondItem="rnN-US-tpF" secondAttribute="bottom" constant="16" id="NnL-La-f31"/>
+                                    <constraint firstAttribute="centerX" secondItem="0mO-ww-Ct1" secondAttribute="centerX" constant="-0.5" id="Rur-fo-4NW"/>
                                     <constraint firstItem="xyN-pu-kR3" firstAttribute="leading" secondItem="uU3-Dd-8pA" secondAttribute="trailing" constant="10" id="S7j-Aq-qWh"/>
                                     <constraint firstAttribute="trailing" secondItem="IPM-ow-q0E" secondAttribute="trailing" constant="10" id="Tdn-KA-daA"/>
                                     <constraint firstItem="uU3-Dd-8pA" firstAttribute="leading" secondItem="eU7-V2-fTo" secondAttribute="leading" constant="20" id="Zr2-hT-ehF"/>
                                     <constraint firstItem="px9-FN-S7B" firstAttribute="leading" secondItem="u4p-as-BcD" secondAttribute="trailing" constant="11" id="bZN-yX-RJO"/>
                                     <constraint firstAttribute="centerX" secondItem="PgT-KW-c3H" secondAttribute="centerX" id="ctu-8c-xyG"/>
+                                    <constraint firstItem="0mO-ww-Ct1" firstAttribute="top" secondItem="ioe-39-IYE" secondAttribute="bottom" constant="-49" id="epS-1l-bbt"/>
                                     <constraint firstItem="ioe-39-IYE" firstAttribute="top" secondItem="uzi-Nh-A4W" secondAttribute="bottom" constant="26" id="hKO-UX-aTE"/>
                                     <constraint firstAttribute="bottom" secondItem="IPM-ow-q0E" secondAttribute="bottom" constant="30" id="hmw-P7-iT8"/>
                                     <constraint firstItem="rnN-US-tpF" firstAttribute="leading" secondItem="eU7-V2-fTo" secondAttribute="leading" id="jC5-Eh-xGU"/>
@@ -459,6 +465,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="0mO-ww-Ct1" id="IrV-Nr-Ltk"/>
                         <outlet property="errorMessage" destination="IPM-ow-q0E" id="6zO-BL-iQf"/>
                         <outlet property="findOnMap" destination="siA-WR-jo7" id="OrG-CJ-AML"/>
                         <outlet property="firstName" destination="xyN-pu-kR3" id="BMf-Xj-4AX"/>
@@ -510,7 +517,7 @@
                                         <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <items>
                                             <navigationItem id="UEA-L4-t9i">
-                                                <barButtonItem key="leftBarButtonItem" title="Back" id="9du-Zw-9bi">
+                                                <barButtonItem key="leftBarButtonItem" title="Cancel" id="9du-Zw-9bi">
                                                     <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="backButtonItemClicked:" destination="x0M-rW-PTB" id="jiD-9r-YOj"/>
@@ -526,7 +533,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="pIF-mB-EyE"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="http://&lt;your url here&gt;">
+                                            <fragment content="Your url here, e.g. www.your_domain_name.com, https://your_domain_name.nl">
                                                 <attributes>
                                                     <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <font key="NSFont" size="17" name="HelveticaNeue"/>

@@ -12,20 +12,24 @@
 	<dict>
 		<key>691F89976D58DA515DCC210DD424050E2542BACA</key>
 		<string>github.com:twelapps/On-The-Map.git</string>
+		<key>A8659536BA329AA05CA42244459FD45DEDD03E91</key>
+		<string>github.com:twelapps/On--The-Map-2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>On The Map.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>691F89976D58DA515DCC210DD424050E2542BACA</key>
+		<string>../../../On%20The%20Map</string>
+		<key>A8659536BA329AA05CA42244459FD45DEDD03E91</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:twelapps/On-The-Map.git</string>
+	<string>github.com:twelapps/On--The-Map-2.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>691F89976D58DA515DCC210DD424050E2542BACA</string>
+	<string>A8659536BA329AA05CA42244459FD45DEDD03E91</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>691F89976D58DA515DCC210DD424050E2542BACA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>On%20The%20Map</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A8659536BA329AA05CA42244459FD45DEDD03E91</string>
+			<key>IDESourceControlWCCName</key>
+			<string>On%20The%20Map%202</string>
 		</dict>
 	</array>
 </dict>

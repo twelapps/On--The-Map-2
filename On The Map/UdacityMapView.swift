@@ -30,8 +30,14 @@ extension UdacityStudentMapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!,
         calloutAccessoryControlTapped control: UIControl!) {
-            let url = view.annotation.subtitle
+            var url = view.annotation.subtitle
             if url != nil {
+                // If it is url without http:// extend the url with this
+                let first4chars = url!.substringToIndex(advance(url!.startIndex, 4))
+                if first4chars != UdacityDBClient.Constants.http {
+                    url = UdacityDBClient.Constants.urlHeader + url!
+                }
+                // Make sure it is an url string without funny characters and then open it
                 if UdacityDBClient().verifyUrl(url) {
                     UIApplication.sharedApplication().openURL(NSURL(string: url!)!)
                 }
@@ -62,8 +68,14 @@ extension MeOnMapViewController: MKMapViewDelegate {
     // Handle tapping the call-out: in this app it should be redirection to an URL
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!,
         calloutAccessoryControlTapped control: UIControl!) {
-            let url = view.annotation.subtitle
+            var url = view.annotation.subtitle
             if url != nil {
+                // If it is url without http:// extend the url with this
+                let first4chars = url!.substringToIndex(advance(url!.startIndex, 4))
+                if first4chars != UdacityDBClient.Constants.http {
+                    url = UdacityDBClient.Constants.urlHeader + url!
+                }
+                // Make sure it is an url string without funny characters and then open it
                 if UdacityDBClient().verifyUrl(url) {
                     UIApplication.sharedApplication().openURL(NSURL(string: url!)!)
                 }

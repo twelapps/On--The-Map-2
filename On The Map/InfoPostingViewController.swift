@@ -12,14 +12,15 @@ import CoreLocation
 
 
 class InfoPostingViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet weak var firstName   : UITextField!
-    @IBOutlet weak var lastName    : UITextField!
-    @IBOutlet weak var placeOfStudy: UITextView!
-    @IBOutlet weak var errorMessage: UITextField!
-    @IBOutlet weak var whereAreYou : UILabel!
-    @IBOutlet weak var studying    : UILabel!
-    @IBOutlet weak var today       : UILabel!
-    @IBOutlet weak var findOnMap   : UIButton!
+    @IBOutlet weak var firstName            : UITextField!
+    @IBOutlet weak var lastName             : UITextField!
+    @IBOutlet weak var placeOfStudy         : UITextView!
+    @IBOutlet weak var errorMessage         : UITextField!
+    @IBOutlet weak var whereAreYou          : UILabel!
+    @IBOutlet weak var studying             : UILabel!
+    @IBOutlet weak var today                : UILabel!
+    @IBOutlet weak var findOnMap            : UIButton!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     let studentInfoKeptHere = (UIApplication.sharedApplication().delegate as! AppDelegate)
     
@@ -82,35 +83,46 @@ class InfoPostingViewController: UIViewController, UITextFieldDelegate {
     @IBAction func findOnMapButtonClicked (sender: UIButton) {
         
         if self.placeOfStudy.text != UdacityDBClient.Constants.emptyString {
+            
+            if firstName.text != UdacityDBClient.Constants.emptyString && lastName.text != UdacityDBClient.Constants.emptyString {
         
-            // Save first name and last name and place of study in AppDelegate.swift for later use and write to user defaults ("disk") as well
-            UdacityDBClient().saveMyName(firstName.text, lastName: lastName.text)
-            UdacityDBClient().saveMyMapstring(placeOfStudy.text)
+                // Save first name and last name and place of study in AppDelegate.swift for later use and write to user defaults ("disk") as well
+                UdacityDBClient().saveMyName(firstName.text, lastName: lastName.text)
+                UdacityDBClient().saveMyMapstring(placeOfStudy.text)
         
-            let geoCoder = CLGeocoder()
+                // Activate "Activity indicator view"
+                self.activityIndicatorView.startAnimating()
+            
+                let geoCoder = CLGeocoder()
         
-            // Forward geocoding based on map string provided by user
-            geoCoder.geocodeAddressString(self.placeOfStudy.text, completionHandler:
-                {(placemarks: [AnyObject]!, error: NSError!) in
+                // Forward geocoding based on map string provided by user
+                geoCoder.geocodeAddressString(self.placeOfStudy.text, completionHandler:
+                    {(placemarks: [AnyObject]!, error: NSError!) in
                 
-                    if error != nil {
-                        self.throwMessage(UdacityDBClient.Constants.msgFindLocationProblem)
-                    } else {
-                        if placemarks.count > 0 {
-                            let placemark = placemarks[0] as! CLPlacemark
-                            let location = placemark.location
-                            self.studentInfoKeptHere.myMapStringCoords.latitude  = location.coordinate.latitude
-                            self.studentInfoKeptHere.myMapStringCoords.longitude = location.coordinate.longitude
-                        
-                            let storyboard = self.storyboard
-                            let nextVC = storyboard!.instantiateViewControllerWithIdentifier("MeOnMap") as! UIViewController
-                            self.presentViewController(nextVC, animated: true, completion: nil)
-
-                        } else {
+                        // De-activate "Activity indicator view"
+                        self.activityIndicatorView.stopAnimating()
+                    
+                        if error != nil {
                             self.throwMessage(UdacityDBClient.Constants.msgFindLocationProblem)
+                        } else {
+                            if placemarks.count > 0 {
+                                let placemark = placemarks[0] as! CLPlacemark
+                                let location = placemark.location
+                                self.studentInfoKeptHere.myMapStringCoords.latitude  = location.coordinate.latitude
+                                self.studentInfoKeptHere.myMapStringCoords.longitude = location.coordinate.longitude
+                        
+                                let storyboard = self.storyboard
+                                let nextVC = storyboard!.instantiateViewControllerWithIdentifier("MeOnMap") as! UIViewController
+                                self.presentViewController(nextVC, animated: true, completion: nil)
+
+                            } else {
+                                self.throwMessage(UdacityDBClient.Constants.msgFindLocationProblem)
+                            }
                         }
-                    }
-            })
+                })
+            } else {
+                self.throwMessage(UdacityDBClient.Constants.msgEnterName)
+            }
         } else {
             self.throwMessage(UdacityDBClient.Constants.msgEnterPlaceOfStudy)
         }
